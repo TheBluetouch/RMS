@@ -19,7 +19,7 @@ public class MockController {
         return UUID.randomUUID().toString();
     }
 
-    @GetMapping("/getOrderStatus")
+    @GetMapping("/order/status")
     public String getOrderStatus(String orderId) {
         return OrderStatus.IN_PREPARATION.getMessageTemplate();
     }
